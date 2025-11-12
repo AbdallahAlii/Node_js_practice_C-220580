@@ -14,9 +14,9 @@ async function run() {
 
     // insert many
     const insertedBatch = await students.insertMany([
-      { name: "Faisa", age: 21, department: "Engineering", year: 2 },
-      { name: "Sahal", age: 19, department: "Engineering", year: 1 },
-      { name: "Ruqiya", age: 20, department: "Engineering", year: 3 },
+      { name: "Nimca Aadan", age: 32, department: "Engineering", year: 2 },
+      { name: "Fardoso Nuur", age: 17, department: "Engineering", year: 1 },
+      { name: "Yaasmiin", age: 10, department: "Engineering", year: 3 },
     ]);
     console.log("Added:", insertedBatch.insertedCount);
 
@@ -36,8 +36,8 @@ async function run() {
 
     // update one
     const updatedOne = await students.updateOne(
-      { name: "Isra" },
-      { $set: { age: 18 } }
+      { name: "Balqiisa" },
+      { $set: { age: 15 } }
     );
     console.log("Updated (one):", updatedOne.modifiedCount);
 
